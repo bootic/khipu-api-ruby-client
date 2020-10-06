@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'autotest-fsevent', '~> 0.2', '>= 0.2.10'
 
   s.files         = `git ls-files -z`.split("\x0")
-  s.test_files    = spec.files.grep(/^spec/)
+  s.test_files    = s.files.grep(/^spec/)
   s.executables   = []
   s.require_paths = ["lib"]
 end
